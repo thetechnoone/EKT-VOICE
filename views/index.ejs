@@ -1,0 +1,26 @@
+<%-include("partials/header.ejs")%>
+<div class="container">
+    <h1>
+    EKT Let Your Voice Be Heard!
+    </h1>
+
+    <form id="infoform" method="post" action="/newpost"> 
+        
+        <input type="text" id="subjecttitle" name="subject" required placeholder="Subject">
+       
+        <textarea id ="opinionarea" name="content" placeholder="Type your suggestion here!"required rows="10"></textarea>
+
+        <select name="neighborhood" required>
+            <option value="" data-display="Select">Select your neighborhood</option>
+            <option value="SionHill">Sion Hill</option>
+            <option value="Roseo">Roseo</option>
+        </select>
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+</div>
+
+
+
+<%-include("partials/footer.ejs")%>

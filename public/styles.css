@@ -1,0 +1,97 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #1559bf;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.container,.postbox {
+max-width: 800px;
+margin: 50px auto;
+background-color: rgb(255, 255, 44);
+padding: 20px 40px;
+border-radius:5px;
+box-shadow: 0 10px 5px rgb(0, 0, 0, 0.1 );
+}
+
+input,textarea,select{
+    width:100%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input,select{
+    height: 30px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height:30px;
+    background-color: #1559bf;
+    transition: background-color 0.5s;
+    font-size: larger;
+}
+
+button:hover{
+    background-color: rgb(3, 197, 3);
+    cursor: pointer;
+}
+
+h1{
+    color:#1559bf;
+    text-align: center;
+}
+
+/* .postbox{
+    text-align: center;
+    margin-bottom: 20px;
+}; */
+
+.topnav{
+    max-width: 100%;
+    background-color: rgb(255, 255, 44);
+    border-radius:5px;
+    box-shadow: 0 10px 5px rgb(0, 0, 0, 0.1 );
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    text-decoration: none;
+    color:#1559bf;
+    font-weight: 500;
+    font-size: larger;
+    padding: 20px 20px;
+}
+
+.topnav a:hover{
+    background-color: rgb(3, 197, 3);
+    transition: background-color 0.5s;
+}
+
+.topnav a:active{
+    color: rgb(8, 8, 8);
+}
+
+p{
+    text-align: center;
+}

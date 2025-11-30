@@ -1,0 +1,19 @@
+<%-include ("partials/header.ejs")%>
+    <%if (locals.posts){%>
+         <% posts.forEach(post => {%>
+            <div class="postbox">
+
+                <h1><%=post.subject%></h1>
+                <h2> <%=post.neighborhood%></h2>
+                <h3><%=post.content%></h3>
+                <h4>Post ID:<%=post.id%></h4>
+                <small><%=post.date%></small>
+
+             </div>
+         <%})%>
+    <%}else{%>
+            <h1>
+                There are no posts!
+            </h1>
+        <%}%>
+<%-include("partials/footer.ejs")%>
