@@ -28,6 +28,8 @@ app.post("/newpost",(req,res)=>{
         subject: req.body.subject,
         neighborhood: req.body.neighborhood,
         content: req.body.content,
+        name: req.body.name,
+        
         date: new Date()
     };
 
@@ -36,6 +38,8 @@ app.post("/newpost",(req,res)=>{
 
     res.render("posts.ejs",{posts:posts});
 });
+
+
 
 
 app.listen(port,()=>
